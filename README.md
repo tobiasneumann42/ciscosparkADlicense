@@ -1,4 +1,4 @@
-# ciscosparkADlicense
+# CiscoSparkADlicense
 Script to associate licenses/entitlement in Cisco Spark based on Active Directory group membership
 
 Cisco Spark Directory Sync allows to automatically provision users in Spark based on existing users in Microsoft Active Directory. 
@@ -16,17 +16,17 @@ headers = {
 Enter the Spark license IDs and the Active Directory group names into the script and establish the mapping between them. 
 Example shows only two groups and licenses, this can be extended to meet individual needs (in addition to messaging and meeting entitlements hybrid services such as calendar, call aware and call connect can be associated in the same way). 
 
-# Cisco Spark licenses that should be associated with a specific Active Directory group
-# can be retrieved from https://api.ciscospark.com/v1/licenses
+Cisco Spark licenses that should be associated with a specific Active Directory group
+can be retrieved from https://api.ciscospark.com/v1/licenses
 sparkmessage_lic = 'Y2lzY29zcGFyazovL3VzL0xJQ0VOU0UvZDczYjIGMtZ7QjVjNy00MGRkLTlhNzMtMDkyM2IyZDBiZWQ0Ok1TXzJlYmRjNmU1LWFkOTktNGE4OS1hY2IxLWRiYjgxOTNkOGEzYw'
 webexmessage_lic = 'Y2lzY29zcGFyazovL3VzL0xJQ0VOU0UvZDczYjI0VGMtZjVjNy00MGRkLTlhNzMtMDkyM2IyZDBiZWQ0OkVFXzk5YzU5NzAwLTlmNjgtNGU1OC04YzYzLTk2OTQ4YmZhMmUxM19pZGVudGl0eWxhYjEyYS53ZWJleC5jb20'
 
-# Active Directort groups
+Active Directort groups
 sparkmsggroup = "SparkMessagingTest"
 #sparkmsggroup = "SparkMessaging"
 webexgroup = "WebexMeetingsTest"
 
-# List of dict that contains mapping between groups and licenses
+List of dict that contains mapping between groups and licenses
 todo = []
 todo.append({"adgroup": sparkmsggroup, "spklicense": sparkmessage_lic})
 todo.append({"adgroup": webexgroup, "spklicense": webexmessage_lic})
