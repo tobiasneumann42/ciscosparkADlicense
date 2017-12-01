@@ -29,7 +29,6 @@ webexmessage_lic = 'Y2lzY29zcGFyazovL3VzL0xJQ0VOU0UvZDczYjI0VGMtZjVjNy00MGRkLTlh
 **Active Directort groups**
 ```
 sparkmsggroup = "SparkMessagingTest"
-#sparkmsggroup = "SparkMessaging"
 webexgroup = "WebexMeetingsTest"
 ```
 
